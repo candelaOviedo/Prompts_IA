@@ -11,27 +11,15 @@ Este proyecto proporciona una aplicación que obtiene recetas de cocina detallad
 - Una cuenta en Edamam con una clave de acceso a la API
 
 ## Credenciales
+- Para esta preentrega deje mis credenciales de google (en el archivo googleData.json), unsplash y edamam. Así pueden probarlo de una forma mas rápida
 
-Para ejecutar este proyecto, necesitarás proporcionar tus propias credenciales de Google Cloud, Unsplash y Edamam. Sigue las instrucciones a continuación para configurar estas credenciales.
+## Instalación de Dependencias
 
-### Configuración de Credenciales
+Para ejecutar este proyecto, necesitas instalar las siguientes dependencias. Puedes hacerlo utilizando `pip`:
 
-1. **Credenciales de Google Cloud**:
-   - Accede a tu consola de Google Cloud y crea una nueva cuenta de servicio con los permisos necesarios.
-   - Descarga el archivo JSON con las credenciales de la cuenta de servicio.
-   - Renombra este archivo a `googleData.json` y colócalo en la raíz del proyecto.
+## Actualizaciones:
+- Modifique el prompt para que puede procesar consultas en ingles y en español
 
-2. **Credenciales de Unsplash**:
-   - Crea una cuenta en Unsplash y genera una clave de acceso a la API.
-   - Guarda esta clave en una variable de entorno llamada `UNSPLASH_ACCESS_KEY`.
-
-3. **Credenciales de Edamam**:
-   - Crea una cuenta en Edamam y genera una clave de acceso a la API.
-   - Guarda el ID de la aplicación y la clave en variables de entorno llamadas `EDAMAM_APP_ID` y `EDAMAM_APP_KEY`.
-
-Para configurar las variables de entorno, puedes añadirlas a tu archivo de configuración o exportarlas en tu terminal de la siguiente manera:
 
 ```bash
-export UNSPLASH_ACCESS_KEY='tu_unsplash_access_key'
-export EDAMAM_APP_ID='tu_edamam_app_id'
-export EDAMAM_APP_KEY='tu_edamam_app_key'
+pip install google-generativeai Pillow matplotlib requests
